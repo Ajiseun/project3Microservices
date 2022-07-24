@@ -21,3 +21,4 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push 1386aje/simple-node
+  - echo "what a great idea!"
